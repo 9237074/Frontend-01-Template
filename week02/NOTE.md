@@ -1,8 +1,37 @@
 # 每周总结
-	ASCII 码
-	非 ASCII 编码
-	Unicode
 
+#一
+	编程语言通识
+	语法分类：
+		非形式语言
+		形式语言
+			0型: 无限制文法
+			1型: 上下文相关文法
+			2型: 上下文无关文法
+			3型: 正则文法
+	图灵完备性
+		[wiki](https://zh.wikipedia.org/wiki/%E5%9C%96%E9%9D%88%E5%AE%8C%E5%82%99%E6%80%A7)
+		命令式
+			goto
+			if while
+		声明式
+			递归
+			分治
+	系统类型
+		动态静态
+		强类型弱类型
+		复合类型
+		子类型
+
+#二
+	[Unicode](https://www.fileformat.info/info/unicode/)
+	Atom词
+		InputElement
+			whiteSpace
+			LineTerminator
+			Comment
+			Token
+			
 # 写一个正则表达式 匹配所有 Number 直接量
 	\u002e 是Unicode的.
 	/[0-9]+\u002e[0-9]+|[0-9]+/g
@@ -23,14 +52,5 @@
 	0000 0800-0000 FFFF | 1110xxxx 10xxxxxx 10xxxxxx
 	0001 0000-0010 FFFF | 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
 	
-	思路：
-		第一步：先判断传入Unicode需要几个字节
-		第二步：一个
-	function encode-utf8 (unicode){
-		parseInt(unicode,16).toString(2)
-	}
-	100 1110 0010 0101
-	
-
 #写一个正则表达式，匹配所有的字符串直接量，单引号和双引号
 
